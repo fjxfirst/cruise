@@ -1,68 +1,38 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# C R U I S E
 
-## Available Scripts
+**In modern agile software development practice, there is a development practice called "Continuous Integration (CI)",
+which needs to generate a deployable version at any time, any place. Usually in the actual development, the developer
+push the code to the code library, and this will automatically trigger a series of actions, such as code checking,
+compiling, running testing, packaging. These steps are run through automated scripts to a group of servers, and we
+would like to create a product like CRUISE, which can easily manage these servers, monitor or set the status.**
 
-In the project directory, you can run:
+**现代敏敏捷软件开发实践中，有⼀一种开发实践叫“持续集成(CI)”，它要求任何时间，任何地点都可⽣生成⼀一个可部署的版本。通
+常在实际开发中，开发⼈人员向代码库推送了了代码，会⾃自动触发⼀一系列列动作，包括代码检查，编译，运⾏行行测试，打包。这些
+步骤通过⾃自动化的脚本交给⼀一群服务器器来运⾏行行，我们希望创建CRUISE这样⼀一个产品，可以⽅方便便的管理理这些服务器器
+(Agents)，监控或设置它们的状态。**
 
-### `npm start`
+## 技术选型
+使用的主要技术栈是react,该项目由creat-react-app脚手架生成,以及衍生的js库和插件包括有：
+*react*
+*react-router-dom*
+*redux*
+*redux-thunk*
+*react-redux*
+使用的ajax库：
+*axios*
+css编写使用了scss，移动web适配方案为rem适配，结合postcss-pxtorem将px转为rem，使用媒体查询解决响应式布局
+使用json-server模拟后台数据
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
+## 如何启动项目
+1.在mock-server目录中使用命令npm-start以开启后台模拟数据,地址为http://localhost:3001
+2.cruise目录中使用npm-start开启开发模式，会自动打开浏览器，这时会看到项目的主界面地址为http://localhost:3000/
+### 注意
+package.json中有3个命令
+1. start是手机的开发模式
+2. dev-ipad是平板的开发模式
+3. build是打包项目
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## 项目github地址
+https://github.com/fjxfirst/cruise.git
