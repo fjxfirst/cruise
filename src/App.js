@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Fragment} from 'react';
+import {Provider} from 'react-redux'
+import {BrowserRouter, Route} from 'react-router-dom'
+import store from './store'
+import Header from './components/header'
+import Home from './page/home'
+import Footer from './components/footer'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App(){
+    return (
+      <Provider store={store}>
+        <div id="app-wrap">
+          <Header/>
+          <BrowserRouter>
+            <Fragment>
+              <Route path="/" exact component={Home}/>
+            </Fragment>
+          </BrowserRouter>
+        </div>
+        <Footer/>
+      </Provider>
+    );
 }
 
-export default App;

@@ -1,0 +1,20 @@
+@import "fonts.scss";
+@import "resetcss.scss";
+@import "HD.scss";
+@import "Desktop.scss";
+@import "Tablet.scss";
+@import "Phone.scss";
+
+html{
+  font-size:14Px;
+  color:#2D4054;
+  font-family: Avenir,Helvetica,Arial,sans-serif;
+}
+@keyframes doRoute {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
