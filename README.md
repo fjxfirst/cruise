@@ -26,12 +26,12 @@ css编写使用了scss，移动web适配方案为rem适配，结合postcss-pxtor
 
 
 ## 如何启动项目
-1.在mock-server目录中使用命令npm-start以开启后台模拟数据,地址为http://localhost:3001
-2.cruise目录中使用npm-start开启开发模式，会自动打开浏览器，这时会看到项目的主界面地址为http://localhost:3000/
+1.在mock-server目录中使用命令npm install安装所需的依赖包,再用命令npm-start开启后台模拟数据,地址为http://localhost:3001
+2.cruise目录中使用npm install安装所需的依赖包，然后npm-start开启开发模式，会自动打开浏览器，这时会看到项目的主界面地址为http://localhost:3000/
 ### 注意
 package.json中有3个命令
-1. start是手机的开发模式
-2. dev-ipad是平板的开发模式
+1. start是手机的开发模式,只有平板的看不了
+2. dev-ipad是平板的开发模式，只有手机的看不了
 3. build是打包项目
 
 ## 项目github地址

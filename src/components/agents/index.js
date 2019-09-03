@@ -26,6 +26,7 @@ class Agents extends Component {
   }
 
   componentDidMount() {
+    document.addEventListener('click', this.hidePopup)
     const {getOsList} = this.props
     getOsList()
   }
@@ -99,6 +100,7 @@ class Agents extends Component {
                 </div>
                 <div className="add-info">
                   <div className="add-button" onClick={(e) => {
+                    e.nativeEvent.stopImmediatePropagation()
                     this.showPopup(osItem,oneIndex, e)
                   }}>
                     <i className="icon-plus"/>

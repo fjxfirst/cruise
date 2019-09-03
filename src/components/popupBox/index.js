@@ -29,11 +29,15 @@ class PopupBox extends Component {
     patchOsList(osItem.id, resources, oneIndex)
     hidePopup()
   }
+
+  stopPropagation=(e)=>{
+    e.nativeEvent.stopImmediatePropagation()
+  }
   render() {
     console.log(window.currentWidth)
     return (
       <div id="mask" ref={e => {this.maskDom = e}}>
-        <div id="popup-box" ref={e => {this.popupDom = e}}>
+        <div id="popup-box" ref={e => {this.popupDom = e}} onClick={this.stopPropagation}>
           <div className="triangle"/>
           <i className="icon-close close" onClick={()=>{this.props.hidePopup()}}/>
           <p className="warn">Separate multiple resource name with commas</p>

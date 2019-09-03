@@ -66,7 +66,7 @@
   "scripts": {
     "start": "cross-env DEV_MODE=mobile node scripts/start.js",
     "dev-ipad":"cross-env DEV_MODE=ipad node scripts/start.js",
-    "build": "node scripts/build.js"
+    "build": "node DEV_MODE=mobile scripts/build.js"
   },
   "eslintConfig": {
     "extends": "react-app"
