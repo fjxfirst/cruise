@@ -26,7 +26,7 @@ css编写使用了scss，移动web适配方案为rem适配，结合postcss-pxtor
 
 
 ## 如何启动项目
-1.在mock-server目录中使用命令npm install安装所需的依赖包,再用命令npm-start开启后台模拟数据,地址为http://localhost:3001
+1.在mock-server(https://github.com/fjxfirst/mock-server.git)目录中使用命令npm install安装所需的依赖包,再用命令npm-start开启后台模拟数据,地址为http://localhost:3001
 2.cruise目录中使用npm install安装所需的依赖包，然后npm-start开启开发模式，会自动打开浏览器，这时会看到项目的主界面地址为http://localhost:3000/
 ### 注意
 package.json中有3个命令
